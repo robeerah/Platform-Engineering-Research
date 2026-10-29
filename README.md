@@ -2,13 +2,13 @@
 
 A hands-on implementation of a self-service developer platform using **Nomad + Consul**, **GitHub Actions**, **APISIX**, and **Prometheus + Grafana**.
 
-> 🎓 This project was completed as part of my Platform Engineering internship research.
+>  This project was completed as part of my Platform Engineering internship research.
 
-## 🎯 What This Demonstrates
+##  What This Demonstrates
 
 This lab proves that developers can **deploy, expose, and monitor** their services with minimal platform team intervention — the core philosophy of Platform Engineering.
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Developer Code
@@ -26,7 +26,7 @@ APISIX (API Gateway) → Public URL
 Prometheus (Auto-Discovery) → Grafana Dashboard
 ```
 
-## 📂 Project Structure
+##  Project Structure
 
 | Phase | Directory | What You'll Learn |
 |-------|-----------|-------------------|
@@ -36,7 +36,7 @@ Prometheus (Auto-Discovery) → Grafana Dashboard
 | 4 | `phase-4-monitoring/` | Consul service discovery in Prometheus |
 | 5 | `phase-5-golden-path/` | End-to-end automation script |
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 ```bash
@@ -68,7 +68,7 @@ Then visit:
 - **Consul:** http://localhost:8500
 - **Nomad:** http://localhost:4646
 
-## 📖 Deep-Dive Documentation
+##  Deep-Dive Documentation
 
 Each phase has its own documentation with learnings and screenshots:
 - [Phase 1: Orchestration](docs/01-orchestration.md)
@@ -77,7 +77,7 @@ Each phase has its own documentation with learnings and screenshots:
 - [Phase 4: Observability](docs/04-observability.md)
 - [Phase 5: Golden Path](docs/05-golden-path.md)
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 1. **Abstraction is everything** — The JSON→HCL wrapper saves developers from learning Nomad
 2. **Reusable workflows** — Developers write 10 lines of CI/CD, not 100
@@ -85,9 +85,9 @@ Each phase has its own documentation with learnings and screenshots:
 4. **Auto-discovery** — Prometheus finds services via Consul, no manual config
 5. **The Golden Path** — One script deploys, routes, and monitors a service
 
-## 🔗 Related Research
+##  Related Research
 
 See the full research proposal: [Platform Engineering Research Doc](./RESEARCH-DOC.md)
 
-## 📅 Date
+##  Date
 October 2026
