@@ -1,0 +1,16 @@
+{
+  "uri": "/api/v1/my-webapp/*",
+  "upstream": {
+    "type": "roundrobin",
+    "nodes": {
+      "host.docker.internal:20000": 1
+    }
+  },
+  "plugins": {
+    "limit-count": {
+      "count": 100,
+      "time_window": 60,
+      "rejected_code": 429
+    }
+  }
+}
